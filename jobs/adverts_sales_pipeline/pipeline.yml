@@ -10,10 +10,10 @@ Original file is located at
 $schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
 type: pipeline
 
-description: Train model with auto mpg data
+description: Train model with advertising sales data
 
-display_name: auto-mpg-pipeline-example
-experiment_name: auto-mpg-pipeline-example
+display_name: advertising-sales-pipeline
+experiment_name: advertising-sales-pipeline
 jobs:
 
   prep_job:
