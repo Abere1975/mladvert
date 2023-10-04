@@ -52,8 +52,8 @@ def main():
     advertising_sales_train = pd.read_csv(select_first_file(args.train_data))  # Read the training data
      advertising_sales_test = pd.read_csv(select_first_file(args.test_data)) # Read the test data
 
-    target = 'mpg'
-    numeric_features = ['TV','Radio','Newspaper','Sales',]
+    target = 'Sales'
+    numeric_features = ['TV','Radio','Newspaper',]
 
     # Extract the features from the training data
     X_train =  advertising_sales_train.drop(columns=[target])
