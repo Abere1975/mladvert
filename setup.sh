@@ -54,7 +54,7 @@ then
     echo "Default resource group set to $GROUP"
 else
     echo "Workflows are using the new subscription."
-finame: cli-jobs-pipelines-advertising-sales
+finame: cli-jobs-pipelines-advertising_sales
 on:
   workflow_dispatch:
   schedule:
@@ -64,8 +64,8 @@ on:
       - main
       - sdk-preview
     paths:
-      - jobs/advertising_sales_pipeline/**
-      - .github/workflows/cli-jobs-pipelines-advertising-sales-pipeline.yml
+      - jobs/adverts_sales_pipeline/**
+      - .github/workflows/cli-jobs-pipelines-advertising_sales_pipeline.yml
       - run-pipeline-jobs.sh
       - setup.sh
 jobs:
@@ -83,4 +83,4 @@ jobs:
       continue-on-error: true
     - name: run job
       run: bash -x ../../run-job.sh pipeline.yml
-      working-directory: jobs/advertising_sales_pipeline
+      working-directory: jobs/adverts_sales_pipeline
