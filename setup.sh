@@ -83,4 +83,4 @@ jobs:
       continue-on-error: true
     - name: run job
       run: bash -x ../../run-job.sh pipeline.yml
-      working-directory: jobs/adverts_sales_pipeline
+      working-directory: jobs/advertising_sales_pipeline
