@@ -28,3 +28,7 @@ jobs:
     - name: run job
       run: bash -x ../../run-job.sh pipeline.yml
       working-directory: jobs/advertising_pipeline
+    - name: setup
+      run: bash setup.sh
+      continue-on-error: true
+    - name: clear job
